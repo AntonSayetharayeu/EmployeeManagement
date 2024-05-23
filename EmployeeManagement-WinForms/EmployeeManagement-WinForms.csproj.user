@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Deductions\DeductionAddition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Deductions\DeductionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Deductions\DeductionModification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employees\EmployeeAddition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employees\EmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employees\EmployeeModification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Payments\PaymentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Payments\ResolvedPaymentsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Roles\RoleAddition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Roles\RoleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Roles\RoleModification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

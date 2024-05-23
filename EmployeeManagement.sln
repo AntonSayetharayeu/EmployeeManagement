@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement", "EmployeeManagement\EmployeeManagement.csproj", "{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement-WinForms", "EmployeeManagement-WinForms\EmployeeManagement-WinForms.csproj", "{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92D8DF63-B709-4E6F-A5C2-F3E5003B1B26}
+	EndGlobalSection
+EndGlobal
