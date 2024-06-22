@@ -80,3 +80,6 @@ E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeMa
 E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeManagement-WinForms\obj\Debug\net8.0-windows\EmployeeManagement_WinForms.Deductions.DeductionModification.resources
 E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeManagement-WinForms\obj\Debug\net8.0-windows\EmployeeManagement_WinForms.Payments.PaymentList.resources
 E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeManagement-WinForms\obj\Debug\net8.0-windows\EmployeeManagement_WinForms.Payments.ResolvedPaymentsList.resources
+E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeManagement-WinForms\obj\Debug\net8.0-windows\EmployeeManagement-WinForms.sourcelink.json
+E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeManagement-WinForms\obj\Debug\net8.0-windows\EmployeeManagement_WinForms.Employees.EmployeeSalaryModification.resources
+E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeManagement-WinForms\obj\Debug\net8.0-windows\EmployeeManagement_WinForms.Payments.PaymentRegistration.resources

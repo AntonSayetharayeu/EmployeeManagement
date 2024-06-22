@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmployeeManagement-WinForms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2fc7652b0f47783d917f7e579a4f8c05fd1b1f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmployeeManagement-WinForms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmployeeManagement-WinForms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -53,3 +53,4 @@ E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeMa
 E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeManagement\obj\Debug\net8.0\EmployeeManagement.pdb
 E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeManagement\obj\Debug\net8.0\EmployeeManagement.genruntimeconfig.cache
 E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeManagement\obj\Debug\net8.0\ref\EmployeeManagement.dll
+E:\Files for learning\Sem 6(23-24)\ADO.NET\Project\EmployeeManagement\EmployeeManagement\obj\Debug\net8.0\EmployeeManagement.sourcelink.json

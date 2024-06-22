@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}|EmployeeManagement\\EmployeeManagement.csproj|e:\\files for learning\\sem 6(23-24)\\ado.net\\project\\employeemanagement\\employeemanagement\\model\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}|EmployeeManagement\\EmployeeManagement.csproj|solutionrelative:employeemanagement\\model\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}|EmployeeManagement-WinForms\\EmployeeManagement-WinForms.csproj|e:\\files for learning\\sem 6(23-24)\\ado.net\\project\\employeemanagement\\employeemanagement-winforms\\deductions\\deductionaddition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}|EmployeeManagement-WinForms\\EmployeeManagement-WinForms.csproj|solutionrelative:employeemanagement-winforms\\deductions\\deductionaddition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}|EmployeeManagement\\EmployeeManagement.csproj|e:\\files for learning\\sem 6(23-24)\\ado.net\\project\\employeemanagement\\employeemanagement\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}|EmployeeManagement\\EmployeeManagement.csproj|solutionrelative:employeemanagement\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}|EmployeeManagement-WinForms\\EmployeeManagement-WinForms.csproj|e:\\files for learning\\sem 6(23-24)\\ado.net\\project\\employeemanagement\\employeemanagement-winforms\\payments\\paymentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}|EmployeeManagement-WinForms\\EmployeeManagement-WinForms.csproj|solutionrelative:employeemanagement-winforms\\payments\\paymentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}|EmployeeManagement-WinForms\\EmployeeManagement-WinForms.csproj|e:\\files for learning\\sem 6(23-24)\\ado.net\\project\\employeemanagement\\employeemanagement-winforms\\payments\\resolvedpaymentslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4CD616-1A83-46CD-BC85-67C04AC04D9B}|EmployeeManagement-WinForms\\EmployeeManagement-WinForms.csproj|solutionrelative:employeemanagement-winforms\\payments\\resolvedpaymentslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}|EmployeeManagement\\EmployeeManagement.csproj|e:\\files for learning\\sem 6(23-24)\\ado.net\\project\\employeemanagement\\employeemanagement\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E0C7011-9AF7-46E8-9BD3-381F984F9B64}|EmployeeManagement\\EmployeeManagement.csproj|solutionrelative:employeemanagement\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement\\Model\\Payment.cs",
-              "RelativeDocumentMoniker": "EmployeeManagement\\Model\\Payment.cs",
-              "ToolTip": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement\\Model\\Payment.cs",
-              "RelativeToolTip": "EmployeeManagement\\Model\\Payment.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA3wCEAAABPAAAA",
+              "Title": "DeductionAddition.cs",
+              "DocumentMoniker": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement-WinForms\\Deductions\\DeductionAddition.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement-WinForms\\Deductions\\DeductionAddition.cs",
+              "ToolTip": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement-WinForms\\Deductions\\DeductionAddition.cs",
+              "RelativeToolTip": "EmployeeManagement-WinForms\\Deductions\\DeductionAddition.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBAAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T19:24:51.104Z",
+              "WhenOpened": "2024-06-22T15:40:02.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResolvedPaymentsList.cs",
+              "DocumentMoniker": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement-WinForms\\Payments\\ResolvedPaymentsList.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement-WinForms\\Payments\\ResolvedPaymentsList.cs",
+              "ToolTip": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement-WinForms\\Payments\\ResolvedPaymentsList.cs",
+              "RelativeToolTip": "EmployeeManagement-WinForms\\Payments\\ResolvedPaymentsList.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAcwGMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T15:37:58.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement\\Repositories\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement\\Repositories\\PaymentRepository.cs",
+              "ToolTip": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement\\Repositories\\PaymentRepository.cs",
+              "RelativeToolTip": "EmployeeManagement\\Repositories\\PaymentRepository.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAWwFQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T15:12:34.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement\\Services\\PaymentService.cs",
+              "ToolTip": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement\\Services\\PaymentService.cs",
+              "RelativeToolTip": "EmployeeManagement\\Services\\PaymentService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAuwC8AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T15:12:07.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaymentList.cs",
+              "DocumentMoniker": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement-WinForms\\Payments\\PaymentList.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement-WinForms\\Payments\\PaymentList.cs",
+              "ToolTip": "E:\\Files for learning\\Sem 6(23-24)\\ADO.NET\\Project\\EmployeeManagement\\EmployeeManagement-WinForms\\Payments\\PaymentList.cs",
+              "RelativeToolTip": "EmployeeManagement-WinForms\\Payments\\PaymentList.cs",
+              "ViewState": "AQIAALgAAAAAAAAAAAAgwMkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T15:03:44.783Z",
               "EditorCaption": ""
             }
           ]

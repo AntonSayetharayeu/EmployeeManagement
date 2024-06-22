@@ -11,8 +11,6 @@ namespace EmployeeManagement_WinForms
     public partial class MainMenu : Form
     {
         private BasicService<Employee> basicService = new BasicService<Employee>();
-        private LoginService loginService = new LoginService();
-        private Employee loggedInUser;
 
         public MainMenu()
         {
@@ -107,10 +105,11 @@ namespace EmployeeManagement_WinForms
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            /*try
+            try
             {
-                loggedInUser = loginService.LogIn(textBoxLogin.Text, textBoxPassword.Text);
-
+                //loggedInUser = loginService.LogIn(textBoxLogin.Text, textBoxPassword.Text);
+                
+                /*
                 if (loggedInUser != null)
                 {
                     Hide();
@@ -119,17 +118,17 @@ namespace EmployeeManagement_WinForms
                     employeeList.ShowDialog();
                     Close();
                     return;
-                }
+                }*/
 
                 MessageBox.Show("Did not managed to log in!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Operation went wrong, try again later please!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
+            }
 
-            var employeeList = new EmployeeList();
-            employeeList.ShowDialog();
+           /* var employeeList = new EmployeeList();
+            employeeList.ShowDialog();*/
         }
 
         private void buttonRoles_Click(object sender, EventArgs e)
