@@ -16,27 +16,45 @@
 
         private void InitializeComponent()
         {
-            this.dataGridViewResolvedPayments = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResolvedPayments)).BeginInit();
-            this.SuspendLayout();
+            dataGridViewResolvedPayments = new DataGridView();
+            buttonCopyPayment = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewResolvedPayments).BeginInit();
+            SuspendLayout();
             // 
             // dataGridViewResolvedPayments
             // 
-            this.dataGridViewResolvedPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewResolvedPayments.Location = new System.Drawing.Point(12, 12);
-            this.dataGridViewResolvedPayments.Name = "dataGridViewResolvedPayments";
-            this.dataGridViewResolvedPayments.Size = new System.Drawing.Size(760, 437);
-            this.dataGridViewResolvedPayments.TabIndex = 0;
+            dataGridViewResolvedPayments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewResolvedPayments.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewResolvedPayments.Location = new Point(12, 12);
+            dataGridViewResolvedPayments.Name = "dataGridViewResolvedPayments";
+            dataGridViewResolvedPayments.RowHeadersVisible = false;
+            dataGridViewResolvedPayments.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewResolvedPayments.Size = new Size(760, 437);
+            dataGridViewResolvedPayments.TabIndex = 0;
+            dataGridViewResolvedPayments.CellFormatting += DataGridViewPayments_CellFormatting;
+            // 
+            // buttonCopyPayment
+            // 
+            buttonCopyPayment.Location = new Point(12, 455);
+            buttonCopyPayment.Name = "buttonCopyPayment";
+            buttonCopyPayment.Size = new Size(125, 23);
+            buttonCopyPayment.TabIndex = 4;
+            buttonCopyPayment.Text = "Copy payment";
+            buttonCopyPayment.UseVisualStyleBackColor = true;
+            buttonCopyPayment.Click += buttonCopyPayment_Click;
             // 
             // ResolvedPaymentsList
             // 
-            this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.dataGridViewResolvedPayments);
-            this.Name = "ResolvedPaymentsList";
-            this.Text = "Resolved Payments List";
-            this.Load += new System.EventHandler(this.ResolvedPaymentsList_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResolvedPayments)).EndInit();
-            this.ResumeLayout(false);
+            ClientSize = new Size(784, 487);
+            Controls.Add(buttonCopyPayment);
+            Controls.Add(dataGridViewResolvedPayments);
+            Name = "ResolvedPaymentsList";
+            Text = "Resolved Payments List";
+            Load += ResolvedPaymentsList_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewResolvedPayments).EndInit();
+            ResumeLayout(false);
         }
+
+        private Button buttonCopyPayment;
     }
 }
