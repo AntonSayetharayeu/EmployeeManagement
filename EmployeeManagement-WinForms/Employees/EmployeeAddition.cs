@@ -1,4 +1,5 @@
-﻿using EmployeeManagement.Model;
+﻿using EmployeeManagement.App;
+using EmployeeManagement.Model;
 using EmployeeManagement.Services;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -15,8 +16,8 @@ namespace EmployeeManagement_WinForms.Employees
 {
     public partial class EmployeeAddition : Form
     {
-        BasicService<Role> roleService = new BasicService<Role>();
-        LoginService loginService = new LoginService();
+        BasicService<Role> roleService = new();
+        EmployeeService employeeService = new();
 
         public EmployeeAddition()
         {
@@ -27,23 +28,23 @@ namespace EmployeeManagement_WinForms.Employees
         {
             try
             {
-                if (textBoxPassword.Text.IsNullOrEmpty() || textBoxRepeatPassword.Text.IsNullOrEmpty() || !textBoxPassword.Text.Equals(textBoxRepeatPassword.Text)) 
+                if (comboBoxEmployeeRole.SelectedItem == null)
                 {
-                    MessageBox.Show("Please, provide proper data for password!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please select a role for the employee.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                loginService.RegisterNewEmployee(new Employee 
-                { 
+                var employee = new Employee()
+                {
                     Name = textBoxName.Text,
                     Surname = textBoxSurname.Text,
-                    Age = Convert.ToInt32(textBoxAge.Text),
+                    Age = int.Parse(textBoxAge.Text),
                     Email = textBoxEmail.Text,
-                    Password = textBoxPassword.Text,
                     IsDismissed = false,
+                    DefaultSalary = AppConstants.EMPLOYEE_DEFAULT_SALARY,
                     RoleID = (comboBoxEmployeeRole.SelectedItem as Role).ID
-                });
-
+                };
+                employeeService.AddElement(employee);
                 Close();
             }
             catch

@@ -31,9 +31,15 @@ namespace EmployeeManagement_WinForms.Employees
         {
             try
             {
+                if (comboBoxEmployeeRole.SelectedItem == null)
+                {
+                    MessageBox.Show("Please select a role for the employee.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 employee.Name = textBoxName.Text;
                 employee.Surname = textBoxSurname.Text;
-                employee.Age = Convert.ToInt32(textBoxAge.Text);
+                employee.Age = int.Parse(textBoxAge.Text);
                 employee.Email = textBoxEmail.Text;
                 employee.RoleID = (comboBoxEmployeeRole.SelectedItem as Role).ID;
 
@@ -46,6 +52,12 @@ namespace EmployeeManagement_WinForms.Employees
             {
                 MessageBox.Show("Operation went wrong, try again later please!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void buttonEditSalary_Click(object sender, EventArgs e)
+        {
+            var salaryModification = new EmployeeSalaryModification(employee);
+            salaryModification.ShowDialog();
         }
     }
 }

@@ -33,8 +33,6 @@
             textBoxSurname = new TextBox();
             textBoxAge = new TextBox();
             textBoxEmail = new TextBox();
-            textBoxPassword = new TextBox();
-            textBoxRepeatPassword = new TextBox();
             comboBoxEmployeeRole = new ComboBox();
             buttonAddEmployee = new Button();
             SuspendLayout();
@@ -74,41 +72,23 @@
             // 
             // textBoxEmail
             // 
-            textBoxEmail.Location = new Point(12, 114);
+            textBoxEmail.Location = new Point(186, 56);
             textBoxEmail.Name = "textBoxEmail";
             textBoxEmail.PlaceholderText = "Email";
             textBoxEmail.Size = new Size(100, 23);
             textBoxEmail.TabIndex = 4;
             // 
-            // textBoxPassword
-            // 
-            textBoxPassword.Location = new Point(186, 27);
-            textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.PasswordChar = '*';
-            textBoxPassword.PlaceholderText = "Hasło";
-            textBoxPassword.Size = new Size(100, 23);
-            textBoxPassword.TabIndex = 5;
-            // 
-            // textBoxRepeatPassword
-            // 
-            textBoxRepeatPassword.Location = new Point(186, 56);
-            textBoxRepeatPassword.Name = "textBoxRepeatPassword";
-            textBoxRepeatPassword.PasswordChar = '*';
-            textBoxRepeatPassword.PlaceholderText = "Powtóż hasło";
-            textBoxRepeatPassword.Size = new Size(100, 23);
-            textBoxRepeatPassword.TabIndex = 6;
-            // 
             // comboBoxEmployeeRole
             // 
             comboBoxEmployeeRole.FormattingEnabled = true;
-            comboBoxEmployeeRole.Location = new Point(186, 85);
+            comboBoxEmployeeRole.Location = new Point(186, 27);
             comboBoxEmployeeRole.Name = "comboBoxEmployeeRole";
             comboBoxEmployeeRole.Size = new Size(100, 23);
             comboBoxEmployeeRole.TabIndex = 7;
             // 
             // buttonAddEmployee
             // 
-            buttonAddEmployee.Location = new Point(12, 173);
+            buttonAddEmployee.Location = new Point(12, 127);
             buttonAddEmployee.Name = "buttonAddEmployee";
             buttonAddEmployee.Size = new Size(274, 42);
             buttonAddEmployee.TabIndex = 8;
@@ -121,11 +101,9 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PapayaWhip;
-            ClientSize = new Size(298, 227);
+            ClientSize = new Size(298, 181);
             Controls.Add(buttonAddEmployee);
             Controls.Add(comboBoxEmployeeRole);
-            Controls.Add(textBoxRepeatPassword);
-            Controls.Add(textBoxPassword);
             Controls.Add(textBoxEmail);
             Controls.Add(textBoxAge);
             Controls.Add(textBoxSurname);
@@ -145,8 +123,6 @@
         private TextBox textBoxSurname;
         private TextBox textBoxAge;
         private TextBox textBoxEmail;
-        private TextBox textBoxPassword;
-        private TextBox textBoxRepeatPassword;
         private ComboBox comboBoxEmployeeRole;
         private Button buttonAddEmployee;
     }
