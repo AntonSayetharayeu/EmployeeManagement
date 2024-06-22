@@ -4,7 +4,7 @@ using System;
 using System.Windows.Forms;
 
 namespace EmployeeManagement_WinForms.Roles
-{
+{ 
     public partial class RoleModification : Form
     {
         private Role role;

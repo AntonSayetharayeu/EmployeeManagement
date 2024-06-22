@@ -18,48 +18,49 @@
 
         private void InitializeComponent()
         {
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.textBoxName = new System.Windows.Forms.TextBox();
-            this.buttonSaveChanges = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            labelTitle = new Label();
+            textBoxName = new TextBox();
+            buttonSaveChanges = new Button();
+            SuspendLayout();
             // 
             // labelTitle
             // 
-            this.labelTitle.AutoSize = true;
-            this.labelTitle.Location = new System.Drawing.Point(12, 9);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(98, 15);
-            this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "Modify Role";
+            labelTitle.AutoSize = true;
+            labelTitle.Location = new Point(12, 9);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(71, 15);
+            labelTitle.TabIndex = 0;
+            labelTitle.Text = "Modify Role";
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(12, 27);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(260, 23);
-            this.textBoxName.TabIndex = 1;
+            textBoxName.Location = new Point(12, 27);
+            textBoxName.Name = "textBoxName";
+            textBoxName.PlaceholderText = "Role Name";
+            textBoxName.Size = new Size(260, 23);
+            textBoxName.TabIndex = 1;
             // 
             // buttonSaveChanges
             // 
-            this.buttonSaveChanges.Location = new System.Drawing.Point(12, 56);
-            this.buttonSaveChanges.Name = "buttonSaveChanges";
-            this.buttonSaveChanges.Size = new System.Drawing.Size(260, 42);
-            this.buttonSaveChanges.TabIndex = 2;
-            this.buttonSaveChanges.Text = "Save Changes";
-            this.buttonSaveChanges.UseVisualStyleBackColor = true;
-            this.buttonSaveChanges.Click += new System.EventHandler(this.buttonSaveChanges_Click);
+            buttonSaveChanges.Location = new Point(12, 56);
+            buttonSaveChanges.Name = "buttonSaveChanges";
+            buttonSaveChanges.Size = new Size(260, 42);
+            buttonSaveChanges.TabIndex = 2;
+            buttonSaveChanges.Text = "Save Changes";
+            buttonSaveChanges.UseVisualStyleBackColor = true;
+            buttonSaveChanges.Click += buttonSaveChanges_Click;
             // 
             // RoleModification
             // 
-            this.ClientSize = new System.Drawing.Size(284, 111);
-            this.Controls.Add(this.buttonSaveChanges);
-            this.Controls.Add(this.textBoxName);
-            this.Controls.Add(this.labelTitle);
-            this.Name = "RoleModification";
-            this.Text = "Role Modification";
-            this.Load += new System.EventHandler(this.RoleModification_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            ClientSize = new Size(284, 111);
+            Controls.Add(buttonSaveChanges);
+            Controls.Add(textBoxName);
+            Controls.Add(labelTitle);
+            Name = "RoleModification";
+            Text = "Role Modification";
+            Load += RoleModification_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }

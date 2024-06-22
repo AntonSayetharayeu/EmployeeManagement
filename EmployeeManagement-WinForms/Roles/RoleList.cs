@@ -9,6 +9,7 @@ namespace EmployeeManagement_WinForms.Roles
     public partial class RoleList : Form
     {
         private BasicService<Role> roleService = new BasicService<Role>();
+        private EmployeeService employeeService = new EmployeeService();
 
         public RoleList()
         {
@@ -23,6 +24,11 @@ namespace EmployeeManagement_WinForms.Roles
         private void LoadRoles()
         {
             dataGridViewRoles.DataSource = roleService.GetElements().ToList();
+
+            if (dataGridViewRoles.Columns["ID"] != null)
+            {
+                dataGridViewRoles.Columns["ID"].Visible = false;
+            }
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -52,6 +58,13 @@ namespace EmployeeManagement_WinForms.Roles
             if (dataGridViewRoles.SelectedRows.Count > 0)
             {
                 var selectedRole = (Role)dataGridViewRoles.SelectedRows[0].DataBoundItem;
+
+                if (employeeService.CheckAreEmployeesWithRoleID(selectedRole.ID))
+                {
+                    MessageBox.Show("This role is assigned to one or more employees and cannot be deleted.", "Delete Role", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 var confirmResult = MessageBox.Show("Are you sure to delete this role?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (confirmResult == DialogResult.Yes)
                 {

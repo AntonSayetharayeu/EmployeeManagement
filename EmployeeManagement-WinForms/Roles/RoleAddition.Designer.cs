@@ -18,48 +18,48 @@
 
         private void InitializeComponent()
         {
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.textBoxRoleName = new System.Windows.Forms.TextBox();
-            this.buttonAddRole = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            labelTitle = new Label();
+            textBoxRoleName = new TextBox();
+            buttonAddRole = new Button();
+            SuspendLayout();
             // 
             // labelTitle
             // 
-            this.labelTitle.AutoSize = true;
-            this.labelTitle.Location = new System.Drawing.Point(12, 9);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(77, 15);
-            this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "Add New Role";
+            labelTitle.AutoSize = true;
+            labelTitle.Location = new Point(12, 9);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(82, 15);
+            labelTitle.TabIndex = 0;
+            labelTitle.Text = "Add New Role";
             // 
             // textBoxRoleName
             // 
-            this.textBoxRoleName.Location = new System.Drawing.Point(12, 27);
-            this.textBoxRoleName.Name = "textBoxRoleName";
-            this.textBoxRoleName.PlaceholderText = "Role Name";
-            this.textBoxRoleName.Size = new System.Drawing.Size(100, 23);
-            this.textBoxRoleName.TabIndex = 1;
+            textBoxRoleName.Location = new Point(12, 27);
+            textBoxRoleName.Name = "textBoxRoleName";
+            textBoxRoleName.PlaceholderText = "Role Name";
+            textBoxRoleName.Size = new Size(260, 23);
+            textBoxRoleName.TabIndex = 1;
             // 
             // buttonAddRole
             // 
-            this.buttonAddRole.Location = new System.Drawing.Point(12, 56);
-            this.buttonAddRole.Name = "buttonAddRole";
-            this.buttonAddRole.Size = new System.Drawing.Size(100, 23);
-            this.buttonAddRole.TabIndex = 2;
-            this.buttonAddRole.Text = "Add Role";
-            this.buttonAddRole.UseVisualStyleBackColor = true;
-            this.buttonAddRole.Click += new System.EventHandler(this.buttonAddRole_Click);
+            buttonAddRole.Location = new Point(12, 56);
+            buttonAddRole.Name = "buttonAddRole";
+            buttonAddRole.Size = new Size(260, 43);
+            buttonAddRole.TabIndex = 2;
+            buttonAddRole.Text = "Add Role";
+            buttonAddRole.UseVisualStyleBackColor = true;
+            buttonAddRole.Click += buttonAddRole_Click;
             // 
             // RoleAddition
             // 
-            this.ClientSize = new System.Drawing.Size(284, 91);
-            this.Controls.Add(this.buttonAddRole);
-            this.Controls.Add(this.textBoxRoleName);
-            this.Controls.Add(this.labelTitle);
-            this.Name = "RoleAddition";
-            this.Text = "Role Addition";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            ClientSize = new Size(284, 111);
+            Controls.Add(buttonAddRole);
+            Controls.Add(textBoxRoleName);
+            Controls.Add(labelTitle);
+            Name = "RoleAddition";
+            Text = "Role Addition";
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }
