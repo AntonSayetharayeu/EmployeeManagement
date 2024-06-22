@@ -8,9 +8,8 @@ namespace EmployeeManagement.Model
         public string Surname { get; set; }
         public int Age { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
         public bool IsDismissed { get; set; }
-
+        public decimal DefaultSalary { get; set; }
 
         //Navigation
         public int RoleID { get; set; }
@@ -24,15 +23,15 @@ namespace EmployeeManagement.Model
                 Surname = (string)dataRow["Surname"],
                 Age = (int)dataRow["Age"],
                 Email = (string)dataRow["Email"],
-                Password = (string)dataRow["Password"],
                 IsDismissed = (bool)dataRow["IsDismissed"],
+                DefaultSalary = (decimal)dataRow["DefaultSalary"],
                 RoleID = (int)dataRow["RoleID"]
             };
         }
 
         public override object[] GetElementProperties()
         {
-            return [null, Name, Surname, Age, Email, Password, IsDismissed, RoleID];
+            return [null, Name, Surname, Age, Email, IsDismissed, RoleID, DefaultSalary];
         }
 
         public override void UpdateDbModel(DataRow dataRow)
@@ -41,9 +40,14 @@ namespace EmployeeManagement.Model
             dataRow["Surname"] = Surname;
             dataRow["Age"] = Age;
             dataRow["Email"] = Email;
-            dataRow["Password"] = Password;
             dataRow["IsDismissed"] = IsDismissed;
+            dataRow["DefaultSalary"] = DefaultSalary;
             dataRow["RoleID"] = RoleID;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} {Surname} {DefaultSalary} $";
         }
     }
 }

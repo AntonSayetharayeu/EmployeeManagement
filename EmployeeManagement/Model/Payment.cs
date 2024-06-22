@@ -11,7 +11,7 @@ namespace EmployeeManagement.Model
     {
         public DateTime DateOfCreation { get; set; }
         public DateTime DateOfLatestModification { get; set; }
-        public DateTime DateOfEnd { get; set; }
+        public DateTime? DateOfClosing { get; set; }
         public decimal DefaultValue { get; set; }
         public decimal? TaxValue { get; set; }
         public decimal? BonusValue { get; set; }
@@ -28,10 +28,10 @@ namespace EmployeeManagement.Model
                 ID = (int)dataRow["ID"],
                 DateOfCreation = (DateTime)dataRow["DateOfCreation"],
                 DateOfLatestModification = (DateTime)dataRow["DateOfLatestModification"],
-                DateOfEnd = (DateTime)dataRow["DateOfEnd"],
+                DateOfClosing = (dataRow["DateOfClosing"].GetType() == typeof(DBNull) ? null : (DateTime)dataRow["DateOfClosing"]),
                 DefaultValue = (decimal)dataRow["DefaultValue"],
                 TaxValue = (dataRow["TaxValue"].GetType() == typeof(DBNull) ? null : (decimal)dataRow["TaxValue"]),
-                BonusValue = (dataRow["BonusValue"].GetType() == typeof(DBNull) ? null : (decimal)dataRow["TaxValue"]),
+                BonusValue = (dataRow["BonusValue"].GetType() == typeof(DBNull) ? null : (decimal)dataRow["BonusValue"]),
                 FinalValue = (decimal)dataRow["FinalValue"],
                 Status = (int)dataRow["Status"],
                 EmployeeID = (int)dataRow["EmployeeID"]
@@ -40,17 +40,17 @@ namespace EmployeeManagement.Model
 
         public override object[] GetElementProperties()
         {
-            return [null, DateOfCreation, DateOfLatestModification, DateOfEnd, DefaultValue, TaxValue, BonusValue, FinalValue, Status, EmployeeID];
+            return [null, DateOfCreation, DateOfLatestModification, DefaultValue, TaxValue, BonusValue, FinalValue, Status, EmployeeID, DateOfClosing];
         }
 
         public override void UpdateDbModel(DataRow dataRow)
         {
             dataRow["DateOfCreation"] = DateOfCreation;
             dataRow["DateOfLatestModification"] = DateOfLatestModification;
-            dataRow["DateOfEnd"] = DateOfEnd;
+            dataRow["DateOfClosing"] = DateOfClosing == null ? DBNull.Value : DateOfClosing;
             dataRow["DefaultValue"] = DefaultValue;
-            dataRow["TaxValue"] = TaxValue;
-            dataRow["BonusValue"] = BonusValue;
+            dataRow["TaxValue"] = TaxValue == null ? DBNull.Value : TaxValue;
+            dataRow["BonusValue"] = BonusValue == null ? DBNull.Value : BonusValue;
             dataRow["FinalValue"] = FinalValue;
             dataRow["Status"] = Status;
             dataRow["EmployeeID"] = EmployeeID;

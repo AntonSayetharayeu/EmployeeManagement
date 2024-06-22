@@ -9,6 +9,7 @@ namespace EmployeeManagement.Model
         public string Description { get; set; }
         public bool IsPercentage { get; set; }
         public decimal Value { get; set; }
+        public bool IsActive { get; set; }
 
         public override Deduction CreateModel(DataRow dataRow)
         {
@@ -18,13 +19,14 @@ namespace EmployeeManagement.Model
                 Name = (string)dataRow["Name"],
                 Description = (string)dataRow["Description"],
                 IsPercentage = (bool)dataRow["IsPercentage"],
-                Value = (decimal)dataRow["Value"]
+                Value = (decimal)dataRow["Value"],
+                IsActive = (bool)dataRow["IsActive"]
             };
         }
 
         public override object[] GetElementProperties()
         {
-            return [null, Name, Description, IsPercentage, Value];
+            return [null, Name, Description, IsPercentage, Value, IsActive];
         }
 
         public override void UpdateDbModel(DataRow dataRow)
@@ -33,6 +35,12 @@ namespace EmployeeManagement.Model
             dataRow["Description"] = Description;
             dataRow["IsPercentage"] = IsPercentage;
             dataRow["Value"] = Value;
+            dataRow["IsActive"] = IsActive;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} {Value} {(IsPercentage ? "%" : "")}";
         }
     }
 }
