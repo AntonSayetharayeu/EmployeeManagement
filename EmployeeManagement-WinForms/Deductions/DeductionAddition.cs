@@ -21,8 +21,15 @@ namespace EmployeeManagement_WinForms.Deductions
                     Name = textBoxName.Text,
                     Description = textBoxDescription.Text,
                     IsPercentage = checkBoxIsPercentage.Checked,
-                    Value = Convert.ToDecimal(textBoxValue.Text)
+                    Value = Convert.ToDecimal(textBoxValue.Text),
+                    IsActive = true
                 };
+
+                if ((checkBoxDeductionType.Checked && newDeduction.Value < 0) ||
+                    (!checkBoxDeductionType.Checked && newDeduction.Value > 0)) 
+                { 
+                    newDeduction.Value = -newDeduction.Value;
+                }
 
                 deductionService.AddElement(newDeduction);
 

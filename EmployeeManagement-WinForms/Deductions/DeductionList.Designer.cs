@@ -19,63 +19,68 @@
 
         private void InitializeComponent()
         {
-            this.dataGridViewDeductions = new System.Windows.Forms.DataGridView();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.buttonEdit = new System.Windows.Forms.Button();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDeductions)).BeginInit();
-            this.SuspendLayout();
+            dataGridViewDeductions = new DataGridView();
+            buttonAdd = new Button();
+            buttonEdit = new Button();
+            buttonDelete = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewDeductions).BeginInit();
+            SuspendLayout();
             // 
             // dataGridViewDeductions
             // 
-            this.dataGridViewDeductions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDeductions.Location = new System.Drawing.Point(12, 12);
-            this.dataGridViewDeductions.Name = "dataGridViewDeductions";
-            this.dataGridViewDeductions.Size = new System.Drawing.Size(560, 250);
-            this.dataGridViewDeductions.TabIndex = 0;
+            dataGridViewDeductions.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewDeductions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewDeductions.Location = new Point(12, 12);
+            dataGridViewDeductions.MultiSelect = false;
+            dataGridViewDeductions.Name = "dataGridViewDeductions";
+            dataGridViewDeductions.ReadOnly = true;
+            dataGridViewDeductions.RowHeadersVisible = false;
+            dataGridViewDeductions.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewDeductions.Size = new Size(560, 250);
+            dataGridViewDeductions.TabIndex = 0;
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(12, 268);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
-            this.buttonAdd.TabIndex = 1;
-            this.buttonAdd.Text = "Add";
-            this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            buttonAdd.Location = new Point(12, 268);
+            buttonAdd.Name = "buttonAdd";
+            buttonAdd.Size = new Size(75, 23);
+            buttonAdd.TabIndex = 1;
+            buttonAdd.Text = "Add";
+            buttonAdd.UseVisualStyleBackColor = true;
+            buttonAdd.Click += buttonAdd_Click;
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(93, 268);
-            this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(75, 23);
-            this.buttonEdit.TabIndex = 2;
-            this.buttonEdit.Text = "Edit";
-            this.buttonEdit.UseVisualStyleBackColor = true;
-            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
+            buttonEdit.Location = new Point(93, 268);
+            buttonEdit.Name = "buttonEdit";
+            buttonEdit.Size = new Size(75, 23);
+            buttonEdit.TabIndex = 2;
+            buttonEdit.Text = "Edit";
+            buttonEdit.UseVisualStyleBackColor = true;
+            buttonEdit.Click += buttonEdit_Click;
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(174, 268);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
-            this.buttonDelete.TabIndex = 3;
-            this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            buttonDelete.Location = new Point(174, 268);
+            buttonDelete.Name = "buttonDelete";
+            buttonDelete.Size = new Size(75, 23);
+            buttonDelete.TabIndex = 3;
+            buttonDelete.Text = "Delete";
+            buttonDelete.UseVisualStyleBackColor = true;
+            buttonDelete.Click += buttonDelete_Click;
             // 
             // DeductionList
             // 
-            this.ClientSize = new System.Drawing.Size(584, 311);
-            this.Controls.Add(this.buttonDelete);
-            this.Controls.Add(this.buttonEdit);
-            this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.dataGridViewDeductions);
-            this.Name = "DeductionList";
-            this.Text = "Deduction List";
-            this.Load += new System.EventHandler(this.DeductionList_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDeductions)).EndInit();
-            this.ResumeLayout(false);
+            ClientSize = new Size(584, 311);
+            Controls.Add(buttonDelete);
+            Controls.Add(buttonEdit);
+            Controls.Add(buttonAdd);
+            Controls.Add(dataGridViewDeductions);
+            Name = "DeductionList";
+            Text = "Deduction List";
+            Load += DeductionList_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewDeductions).EndInit();
+            ResumeLayout(false);
         }
     }
 }

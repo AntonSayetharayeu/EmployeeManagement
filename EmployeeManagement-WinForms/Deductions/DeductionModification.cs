@@ -19,6 +19,7 @@ namespace EmployeeManagement_WinForms.Deductions
             textBoxName.Text = deduction.Name;
             textBoxDescription.Text = deduction.Description;
             checkBoxIsPercentage.Checked = deduction.IsPercentage;
+            checkBoxDeductionType.Checked = deduction.Value > 0;
             textBoxValue.Text = deduction.Value.ToString();
         }
 
@@ -30,6 +31,12 @@ namespace EmployeeManagement_WinForms.Deductions
                 deduction.Description = textBoxDescription.Text;
                 deduction.IsPercentage = checkBoxIsPercentage.Checked;
                 deduction.Value = Convert.ToDecimal(textBoxValue.Text);
+
+                if ((checkBoxDeductionType.Checked && deduction.Value < 0) ||
+                    (!checkBoxDeductionType.Checked && deduction.Value > 0))
+                {
+                    deduction.Value = -deduction.Value;
+                }
 
                 deductionService.UpdateElement(deduction);
 
